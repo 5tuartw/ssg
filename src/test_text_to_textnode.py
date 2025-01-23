@@ -1,6 +1,7 @@
 import unittest
 
 from main import *
+from node_parser import *
 
 class testsplitnodelink(unittest.TestCase):
     def test_split_single_link(self):

@@ -3,6 +3,7 @@ import unittest
 from main import *
 from textnode import *
 from htmlnode import HTMLNode, LeafNode, ParentNode
+from node_parser import *
 
 class TestSplitNodeDelimiter(unittest.TestCase):
 
