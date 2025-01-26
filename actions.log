@@ -1,0 +1,19 @@
+2025-01-26 09:56:46,098 - INFO - Created directory: ../public
+2025-01-26 10:02:14,526 - INFO - Removing directory: public
+2025-01-26 10:02:14,527 - INFO - Removed directory: public
+2025-01-26 10:02:14,528 - INFO - Created directory: public
+2025-01-26 10:02:14,528 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 10:02:14,528 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 10:02:14,535 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 10:02:40,851 - INFO - Removing directory: public
+2025-01-26 10:02:40,851 - INFO - Removed directory: public
+2025-01-26 10:02:40,858 - INFO - Created directory: public
+2025-01-26 10:02:40,859 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 10:02:40,859 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 10:02:40,860 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 10:02:47,816 - INFO - Removing directory: public
+2025-01-26 10:02:47,816 - INFO - Removed directory: public
+2025-01-26 10:02:47,817 - INFO - Created directory: public
+2025-01-26 10:02:47,817 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 10:02:47,817 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 10:02:47,818 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
