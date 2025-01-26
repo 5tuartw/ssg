@@ -107,22 +107,16 @@ def split_nodes_link(old_nodes):
 
 def text_to_textnodes(text):
     split_images = split_nodes_image([TextNode(text, TextType.TEXT)])
-    #print(len(split_images))
-    #print(split_images)
+
     split_images_and_delimiters = []
     list_of_delimiters = [("**", TextType.BOLD), ("*", TextType.ITALIC),("`", TextType.CODE)]
     for node in split_images:
-        #print(node)
         processed_nodes = [node]
         for delimiter, text_type in list_of_delimiters:
-            #print(f"Processing delimiter: {delimiter}")
-            #print(f"Current processed_nodes: {processed_nodes}")
             if node.text_type != TextType.IMAGE:
                 processed_nodes = split_nodes_delimiter(processed_nodes, delimiter, text_type)
         split_images_and_delimiters.extend(processed_nodes)
-    #print(f"After delimiter work: {split_images_and_delimiters}")    
 
     all_splits = split_nodes_link(split_images_and_delimiters)
-    #print(f"After splitting links: {all_splits}")
     return all_splits
             

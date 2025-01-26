@@ -24,14 +24,16 @@ class HTMLNode():
         return f"Tag: {self.tag}, Value: {self.value}, Children: {self.children}, Props: {self.props_to_html()}"
 
 class LeafNode(HTMLNode):
-    def __init__(self, tag, value, props = None):
-        super().__init__(tag, value, children = None, props = props)
+    def __init__(self, value, props = None):
+        super().__init__(None, value, children = None, props = props)
     
     def to_html(self):
         if self.value is None or self.value == "":
-            raise ValueError()
-        if self.tag == None:
-            return self.value
+            raise ValueError("LeafNode must contain a non-empty value.")
+        #removed this line as leafnodes will only ever have raw text in
+        #if self.tag == None
+        return self.value
+
 
         if self.props is None or self.props == {}:
             html_string = f"<{self.tag}>{self.value}</{self.tag}>"

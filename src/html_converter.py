@@ -15,16 +15,16 @@ def text_node_to_html_node(text_node):
 
     match text_type:
         case TextType.TEXT:
-            return LeafNode(None, text)
+            return HTMLNode(None, text)
         case TextType.BOLD:
-            return LeafNode("b", text)
+            return HTMLNode("b", text)
         case TextType.ITALIC:
-            return LeafNode("i", text)
+            return HTMLNode("i", text)
         case TextType.CODE:
-            return LeafNode("code", text)
+            return HTMLNode("code", text)
         case TextType.LINK:
-            return LeafNode("a", text,{"href": url})
+            return HTMLNode("a", text,{"href": url})
         case TextType.IMAGE:
-            return LeafNode("img", "", {"src": url, "alt": text})
+            return HTMLNode("img", "", {"src": url, "alt": text})
         case _:
             raise Exception("Invalid text type")

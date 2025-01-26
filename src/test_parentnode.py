@@ -21,14 +21,14 @@ class testleafnode(unittest.TestCase):
             parent.to_html()
     
     def test_parent_no_tags(self):
-        leafnode = LeafNode("p", "This is a paragraph.")
+        leafnode = LeafNode("This is a paragraph.")
 
         with self.assertRaises(ValueError):
             parent = ParentNode(None, [leafnode])
             parent.to_html()
     
     def test_parent_one_child(self):
-        leafnode = LeafNode("p", "This is a paragraph.")
+        leafnode = LeafNode("This is a paragraph.")
 
         parent = ParentNode("b",[leafnode])
 
@@ -37,12 +37,12 @@ class testleafnode(unittest.TestCase):
         self.assertEqual(parent.props, None)
 
         htmlstring = parent.to_html()
-        expected = "<b><p>This is a paragraph.</p></b>"
+        expected = "<b>This is a paragraph.</b>"
         self.assertEqual(expected, htmlstring)
 
 
     def test_parent_with_property(self):
-        leafnode = LeafNode("p", "This is a paragraph.")
+        leafnode = LeafNode("This is a paragraph.")
 
         parent = ParentNode("b",[leafnode],{"thing": "this"})
 
@@ -51,11 +51,11 @@ class testleafnode(unittest.TestCase):
         self.assertEqual(parent.props, {"thing": "this"})
 
         htmlstring = parent.to_html()
-        expected = '<b thing="this"><p>This is a paragraph.</p></b>'
+        expected = '<b thing="this">This is a paragraph.</b>'
         self.assertEqual(expected, htmlstring)
     
     def test_parent_with_properties(self):
-        leafnode = LeafNode("p", "This is a paragraph.")
+        leafnode = LeafNode("This is a paragraph.")
 
         parent = ParentNode("b",[leafnode],{"thing": "this", "other": "that"})
 
@@ -64,31 +64,31 @@ class testleafnode(unittest.TestCase):
         self.assertEqual(parent.props, {"thing": "this", "other": "that"})
 
         htmlstring = parent.to_html()
-        expected = '<b thing="this" other="that"><p>This is a paragraph.</p></b>'
+        expected = '<b thing="this" other="that">This is a paragraph.</b>'
         self.assertEqual(expected, htmlstring)
     
     def test_parent_three_children(self):
-        leafnode1 = LeafNode("p", "This is a paragraph.")
-        leafnode2 = LeafNode("i", "Some italics.")
-        leafnode3 = LeafNode("u", "Title.")
+        leafnode1 = LeafNode("This is a paragraph.")
+        leafnode2 = LeafNode("Some italics.")
+        leafnode3 = LeafNode("Title.")
 
-        parent = ParentNode("b",[leafnode1, leafnode2, leafnode3])
+        parent = ParentNode("b", [leafnode1, leafnode2, leafnode3])
 
         self.assertEqual(parent.tag, "b")
         self.assertEqual(parent.children, [leafnode1, leafnode2, leafnode3])
         self.assertEqual(parent.props, None)
 
         htmlstring = parent.to_html()
-        expected = "<b><p>This is a paragraph.</p><i>Some italics.</i><u>Title.</u></b>"
+        expected = "<b>This is a paragraph.Some italics.Title.</b>"
         self.assertEqual(expected, htmlstring)
 
     def test_grandparenting(self):
-        leafnode = LeafNode("p", "This is a paragraph.")
+        leafnode = LeafNode("This is a paragraph.")
         parent = ParentNode("b",[leafnode])
         grandparent = ParentNode("u",[parent])
 
         self.assertEqual(grandparent.tag, "u")
         
         htmlstring = grandparent.to_html()
-        expected = "<u><b><p>This is a paragraph.</p></b></u>"
+        expected = "<u><b>This is a paragraph.</b></u>"
         self.assertEqual(htmlstring, expected)
