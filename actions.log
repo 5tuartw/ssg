@@ -17,3 +17,111 @@
 2025-01-26 10:02:47,817 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
 2025-01-26 10:02:47,817 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
 2025-01-26 10:02:47,818 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 14:57:40,142 - INFO - Removing directory: public
+2025-01-26 14:57:40,143 - INFO - Removed directory: public
+2025-01-26 14:57:40,144 - INFO - Created directory: public
+2025-01-26 14:57:40,144 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 14:57:40,144 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 14:57:40,149 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:07:52,503 - INFO - Removing directory: public
+2025-01-26 15:07:52,505 - INFO - Removed directory: public
+2025-01-26 15:07:52,505 - INFO - Created directory: public
+2025-01-26 15:07:52,505 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:07:52,506 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:07:52,511 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:09:09,143 - INFO - Removing directory: public
+2025-01-26 15:09:09,146 - INFO - Removed directory: public
+2025-01-26 15:09:09,146 - INFO - Created directory: public
+2025-01-26 15:09:09,147 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:09:09,147 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:09:09,152 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:09:47,445 - INFO - Removing directory: public
+2025-01-26 15:09:47,445 - INFO - Removed directory: public
+2025-01-26 15:09:47,453 - INFO - Created directory: public
+2025-01-26 15:09:47,453 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:09:47,453 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:09:47,455 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:11:10,263 - INFO - Removing directory: public
+2025-01-26 15:11:10,263 - INFO - Removed directory: public
+2025-01-26 15:11:10,266 - INFO - Created directory: public
+2025-01-26 15:11:10,266 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:11:10,267 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:11:10,268 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:14:19,702 - INFO - Removing directory: public
+2025-01-26 15:14:19,703 - INFO - Removed directory: public
+2025-01-26 15:14:19,703 - INFO - Created directory: public
+2025-01-26 15:14:19,703 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:14:19,704 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:14:19,709 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:18:56,350 - INFO - Removing directory: public
+2025-01-26 15:18:56,352 - INFO - Removed directory: public
+2025-01-26 15:18:56,352 - INFO - Created directory: public
+2025-01-26 15:18:56,352 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:18:56,353 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:18:56,358 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:20:05,738 - INFO - Removing directory: public
+2025-01-26 15:20:05,740 - INFO - Removed directory: public
+2025-01-26 15:20:05,740 - INFO - Created directory: public
+2025-01-26 15:20:05,740 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:20:05,741 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:20:05,746 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:28:52,938 - INFO - Removing directory: public
+2025-01-26 15:28:52,939 - INFO - Removed directory: public
+2025-01-26 15:28:52,939 - INFO - Created directory: public
+2025-01-26 15:28:52,939 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:28:52,940 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:28:52,941 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:39:57,790 - INFO - Removing directory: public
+2025-01-26 15:39:57,790 - INFO - Removed directory: public
+2025-01-26 15:39:57,791 - INFO - Created directory: public
+2025-01-26 15:39:57,791 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:39:57,791 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:39:57,792 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:42:31,928 - INFO - Removing directory: public
+2025-01-26 15:42:31,928 - INFO - Removed directory: public
+2025-01-26 15:42:31,928 - INFO - Created directory: public
+2025-01-26 15:42:31,929 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:42:31,929 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:42:31,934 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:47:03,927 - INFO - Removing directory: public
+2025-01-26 15:47:03,928 - INFO - Removed directory: public
+2025-01-26 15:47:03,928 - INFO - Created directory: public
+2025-01-26 15:47:03,928 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:47:03,928 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:47:03,934 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:51:49,810 - INFO - Removing directory: public
+2025-01-26 15:51:49,811 - INFO - Removed directory: public
+2025-01-26 15:51:49,811 - INFO - Created directory: public
+2025-01-26 15:51:49,811 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:51:49,812 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:51:49,813 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:56:15,097 - INFO - Removing directory: public
+2025-01-26 15:56:15,098 - INFO - Removed directory: public
+2025-01-26 15:56:15,098 - INFO - Created directory: public
+2025-01-26 15:56:15,098 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:56:15,099 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:56:15,100 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:56:43,879 - INFO - Removing directory: public
+2025-01-26 15:56:43,880 - INFO - Removed directory: public
+2025-01-26 15:56:43,880 - INFO - Created directory: public
+2025-01-26 15:56:43,880 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:56:43,881 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:56:43,886 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 15:58:24,117 - INFO - Removing directory: public
+2025-01-26 15:58:24,118 - INFO - Removed directory: public
+2025-01-26 15:58:24,118 - INFO - Created directory: public
+2025-01-26 15:58:24,118 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 15:58:24,119 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 15:58:24,120 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 17:42:31,636 - INFO - Removing directory: public
+2025-01-26 17:42:31,638 - INFO - Removed directory: public
+2025-01-26 17:42:31,639 - INFO - Created directory: public
+2025-01-26 17:42:31,639 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 17:42:31,639 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 17:42:31,644 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css
+2025-01-26 17:43:28,443 - INFO - Removing directory: public
+2025-01-26 17:43:28,443 - INFO - Removed directory: public
+2025-01-26 17:43:28,443 - INFO - Created directory: public
+2025-01-26 17:43:28,443 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-01-26 17:43:28,444 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to /home/stuart/workspace/github.com/5tuartw/ssg/public/images/rivendell.png
+2025-01-26 17:43:28,449 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to /home/stuart/workspace/github.com/5tuartw/ssg/public/index.css

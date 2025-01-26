@@ -4,6 +4,8 @@ from imglinkextract import *
 from node_parser import *
 from html_converter import *
 from markdown_converter import *
+from generate_page import *
+
 import os
 import shutil
 import logging
@@ -52,6 +54,8 @@ def copy_static_to_public(source, destination):
 def main():
     clear_public_dir()
     copy_static_to_public(src_static, dest_public)
+    generate_pages_recursive("content/", "template.html", "public/")
+
 
 if __name__ == "__main__":
     main()

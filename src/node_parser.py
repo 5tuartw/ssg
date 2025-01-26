@@ -64,9 +64,7 @@ def split_nodes_image(old_nodes):
 
     for old_node in old_nodes:
         old_node_text = old_node.text
-        #print(f"The old text is: {old_node_text}")
         extracted_images = extract_markdown_images(old_node_text)
-        #print(f"Images extracted: {extracted_images}")
         for extracted_image in extracted_images:
             alt_text = extracted_image[0]
             image_url = extracted_image[1]
@@ -88,14 +86,11 @@ def split_nodes_link(old_nodes):
             new_nodes.append(old_node)
         else:
             old_node_text = old_node.text
-            #print(f"The old text is: {old_node_text}")
             extracted_links = extract_markdown_links(old_node_text)
-            #print(f"Links extracted: {extracted_links}")
             for extracted_link in extracted_links:
                 link_text = extracted_link[0]
                 link_url = extracted_link[1]
                 this_split = old_node_text.split(f"[{link_text}]({link_url})",1)
-                #print(f"The current splits are: {this_split}")
                 if this_split[0] != "":
                     new_nodes.append(TextNode(this_split[0], old_node.text_type))
                 new_nodes.append(TextNode(link_text, TextType.LINK, link_url))
@@ -113,7 +108,7 @@ def text_to_textnodes(text):
     for node in split_images:
         processed_nodes = [node]
         for delimiter, text_type in list_of_delimiters:
-            if node.text_type != TextType.IMAGE:
+            if node.text_type not in (TextType.IMAGE, TextType.LINK):
                 processed_nodes = split_nodes_delimiter(processed_nodes, delimiter, text_type)
         split_images_and_delimiters.extend(processed_nodes)
 

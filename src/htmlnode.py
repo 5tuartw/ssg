@@ -4,9 +4,31 @@ class HTMLNode():
         self.value = value
         self.children = children
         self.props = props
-    
+
     def to_html(self):
-        raise NotImplementedError
+        if self.tag is None:
+            raise ValueError("Tag missing")
+        
+        # Handle self-closing tags like <img>
+        if self.tag == "img":
+            return f"<{self.tag}{self.props_to_html()}/>"
+        
+        if self.children is None:
+            raise ValueError("Child node(s) missing from parent")
+        
+        child_strings = ""
+        for child in self.children:
+            child_strings += child.to_html()
+
+        if self.props is None or self.props == {}:
+            html_string = f"<{self.tag}>{child_strings}</{self.tag}>"
+        else:
+            html_string = f"<{self.tag}{self.props_to_html()}>{child_strings}</{self.tag}>"
+
+        return html_string 
+    
+    #def to_html(self):
+    #    raise NotImplementedError
     
     def props_to_html(self):
         if self.props == None or self.props == {}:
