@@ -7,3 +7,4 @@ Throughout this project I was able to:
 - Build the inline markdown parsing logic, and the logic to generate inline HTML elements.
 - Handle entire blocks of markdown, and generate the HTML nodes that represent them.
 - Put the entire static site generator together, and publish a website.
+- Create tests for various stages of the coding process
