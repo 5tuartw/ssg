@@ -57,8 +57,8 @@ def main():
     if len(sys.argv) == 2:
         base_path = sys.argv[1]
     clear_public_dir()
-    copy_static_to_public(src_static, dest_public)
-    generate_pages_recursive(base_path, "content/", "template.html", "public/")
+    copy_static_to_public(src_static, "docs")
+    generate_pages_recursive(base_path, "content/", "template.html", "docs/")
 
 
 if __name__ == "__main__":
