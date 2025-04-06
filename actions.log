@@ -285,3 +285,12 @@
 2025-04-06 18:29:42,520 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/tolkien.png to docs/images/tolkien.png
 2025-04-06 18:29:42,529 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to docs/images/rivendell.png
 2025-04-06 18:29:42,543 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to docs/index.css
+2025-04-06 18:30:38,486 - INFO - Removing directory: public
+2025-04-06 18:30:38,487 - INFO - Removed directory: public
+2025-04-06 18:30:38,487 - INFO - Created directory: public
+2025-04-06 18:30:38,487 - INFO - Entering directory: /home/stuart/workspace/github.com/5tuartw/ssg/static/images
+2025-04-06 18:30:38,487 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/tom.png to docs/images/tom.png
+2025-04-06 18:30:38,492 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/glorfindel.png to docs/images/glorfindel.png
+2025-04-06 18:30:38,502 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/tolkien.png to docs/images/tolkien.png
+2025-04-06 18:30:38,510 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/images/rivendell.png to docs/images/rivendell.png
+2025-04-06 18:30:38,522 - INFO - Copying file: /home/stuart/workspace/github.com/5tuartw/ssg/static/index.css to docs/index.css
