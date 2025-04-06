@@ -4,7 +4,7 @@ from extract_header import *
 
 import os
 
-def generate_page(from_path, template_path, dest_path):
+def generate_page(base_path, from_path, template_path, dest_path):
     #print(f"Attempting to generate page from {from_path} to {dest_path} using {template_path}")
     try:
         with open(from_path, "r") as source_file:
@@ -25,6 +25,8 @@ def generate_page(from_path, template_path, dest_path):
 
     final_html = template.replace("{{ Title }}", title)
     final_html = final_html.replace("{{ Content }}", html)
+    href_path = 'href="'+ base_path
+    final_html = final_html.replace('href="/', href_path)
       
     try:
         os.makedirs(os.path.dirname(dest_path), exist_ok=True)
@@ -35,7 +37,7 @@ def generate_page(from_path, template_path, dest_path):
         print(f"Unable to create destination file: {e}")
         return
 
-def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
+def generate_pages_recursive(base_path, dir_path_content, template_path, dest_dir_path):
     try:
         content_list = os.listdir(dir_path_content)
     except Exception as e:
@@ -49,7 +51,7 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
             item_name = "".join(item_name_split[:-1])
             item_ext = item_name_split[-1]
             if item_ext == "md":
-                generate_page(item_path, "template.html", os.path.join(dest_dir_path, item_name+".html"))
+                generate_page(base_path, item_path, "template.html", os.path.join(dest_dir_path, item_name+".html"))
 
         elif os.path.isdir(item_path):
             new_dest_dir = os.path.join(dest_dir_path, item)

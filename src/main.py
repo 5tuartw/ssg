@@ -9,6 +9,7 @@ from generate_page import *
 import os
 import shutil
 import logging
+import sys
 
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
 src_static = os.path.join(project_root, "static")
@@ -52,9 +53,12 @@ def copy_static_to_public(source, destination):
             copy_static_to_public(source_path, destination_path)
     
 def main():
+    base_path = "/"
+    if len(sys.argv) == 2:
+        base_path = sys.argv[1]
     clear_public_dir()
     copy_static_to_public(src_static, dest_public)
-    generate_pages_recursive("content/", "template.html", "public/")
+    generate_pages_recursive(base_path, "content/", "template.html", "public/")
 
 
 if __name__ == "__main__":
