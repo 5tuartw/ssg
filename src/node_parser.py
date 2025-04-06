@@ -6,57 +6,84 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
     new_nodes = []
     for old_node in old_nodes:
         old_node_text = old_node.text
-
+        
         if old_node.text_type.value != "text":
             new_nodes.append(old_node)
-        elif old_node_text.count(delimiter) % 2 != 0:
+            continue
+            
+        # Skip delimiter count check for underscores
+        if delimiter != "_" and old_node_text.count(delimiter) % 2 != 0:
             raise Exception("Cannot split node with uneven delimiters.")
-        else:
+        
+        current_text = ""
+        normal_text = True
+        i = 0
 
-            current_text = ""
-            normal_text = True
-            i = 0
-
-            while i < len(old_node_text):
-                if len(delimiter) == 1:
-                    char = old_node_text[i]
-                    if char == delimiter and normal_text:
+        while i < len(old_node_text):
+            if len(delimiter) == 1:
+                char = old_node_text[i]
+                
+                # For underscore delimiter, check if it's a valid italic marker
+                if delimiter == "_" and char == "_":
+                    # Skip this underscore if it's within a word (like word_word)
+                    is_valid_marker = True
+                    
+                    # Check if within a word (surrounded by alphanumeric chars)
+                    if normal_text and i > 0 and i < len(old_node_text) - 1:
+                        if old_node_text[i-1].isalnum() and old_node_text[i+1].isalnum():
+                            is_valid_marker = False
+                    
+                    if is_valid_marker and normal_text:
                         if current_text != "":
                             new_nodes.append(TextNode(current_text, TextType.TEXT))
                         normal_text = False
                         current_text = ""
-                        i += 1
-                    elif char == delimiter:
+                    elif is_valid_marker:
                         if current_text != "":
                             new_nodes.append(TextNode(current_text, text_type))
                         normal_text = True
                         current_text = ""
-                        i += 1
                     else:
+                        # Not a valid marker, treat as regular character
                         current_text += char
-                        i += 1
-                elif len(delimiter) == 2:
-                    char = old_node_text[i]
-                    chars = old_node_text[i:i+2]
-                    if chars == delimiter and normal_text:
-                        if current_text != "":
-                            new_nodes.append(TextNode(current_text, TextType.TEXT))
-                        normal_text = False
-                        current_text = ""
-                        i += 2
-                    elif chars == delimiter:
-                        if current_text != "":
-                            new_nodes.append(TextNode(current_text, text_type))
-                        normal_text = True
-                        current_text = ""
-                        i += 2
-                    else:
-                        current_text += char
-                        i += 1
-            
-            if current_text != "":
-                new_nodes.append(TextNode(current_text, TextType.TEXT))
-            
+                    i += 1
+                elif char == delimiter and normal_text:
+                    if current_text != "":
+                        new_nodes.append(TextNode(current_text, TextType.TEXT))
+                    normal_text = False
+                    current_text = ""
+                    i += 1
+                elif char == delimiter:
+                    if current_text != "":
+                        new_nodes.append(TextNode(current_text, text_type))
+                    normal_text = True
+                    current_text = ""
+                    i += 1
+                else:
+                    current_text += char
+                    i += 1
+            elif len(delimiter) == 2:
+                char = old_node_text[i]
+                chars = old_node_text[i:i+2] if i+1 < len(old_node_text) else old_node_text[i]
+                if chars == delimiter and normal_text:
+                    if current_text != "":
+                        new_nodes.append(TextNode(current_text, TextType.TEXT))
+                    normal_text = False
+                    current_text = ""
+                    i += 2
+                elif chars == delimiter:
+                    if current_text != "":
+                        new_nodes.append(TextNode(current_text, text_type))
+                    normal_text = True
+                    current_text = ""
+                    i += 2
+                else:
+                    current_text += char
+                    i += 1
+        
+        if current_text != "":
+            new_nodes.append(TextNode(current_text, TextType.TEXT))
+        
     return new_nodes
 
 def split_nodes_image(old_nodes):
@@ -104,7 +131,7 @@ def text_to_textnodes(text):
     split_images = split_nodes_image([TextNode(text, TextType.TEXT)])
 
     split_images_and_delimiters = []
-    list_of_delimiters = [("**", TextType.BOLD), ("*", TextType.ITALIC),("`", TextType.CODE)]
+    list_of_delimiters = [("**", TextType.BOLD), ("*", TextType.ITALIC),("`", TextType.CODE),("_",TextType.ITALIC)]
     for node in split_images:
         processed_nodes = [node]
         for delimiter, text_type in list_of_delimiters:
